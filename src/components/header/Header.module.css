@@ -1,0 +1,102 @@
+.banner{
+    width: 100vw;
+    background-color: #01BFA6;
+}
+.container{
+    margin: auto;
+    position: relative;
+    width: 1188px;
+}
+.logoContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1188px;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    color: white;
+}
+.navBar{
+    position: sticky;
+}
+.menuBar{
+    background-color: rgb(234, 234, 234);
+    width: 100vw;
+}
+.menuItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0;
+}
+.menuItem a{
+    list-style: none;
+    padding: 5px 17px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.imp{
+    color: #0f1568;
+    transition: all ease 0.3s;
+}
+.nor{
+    color: #9e9e9e;
+    transition: all ease 0.3s;
+}
+.imp:hover{
+    color:#ffa931;
+}
+.nor:hover{
+    color:#ffa931;
+}
+
+.logoBar{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 15px 0;
+}
+.logoContent{
+    width: 200px;
+}
+.logo{
+    max-height: 40px;
+    cursor: pointer;
+}
+.searchBox{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.txtBox{
+    display: block;
+    width: 688px;
+    padding: 15px;
+    background-color: #eff0f5;
+    border: 0;
+}
+.btnSubmit{
+    display: block;
+    width: 45px;
+    height: 45px;
+    color: white;
+    background-color: #f57224;
+    border: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+.pro1{
+    max-height: 45px;
+    cursor: pointer;
+}
+.cartIcon{
+    margin: 0 15px;
+    cursor: pointer;
+}

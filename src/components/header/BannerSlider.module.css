@@ -1,0 +1,61 @@
+.container1 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 344px;
+    background-color: red;
+}
+
+.container2 {
+    margin-right: 788px;
+    width: 1188px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.carousel {
+    display: block;
+    margin-right: auto;
+}
+
+.ximg {
+
+    max-height: 344px;
+}
+
+.sideMenu {
+    display: grid;
+    grid-template-columns: 200px;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-row-gap: auto;
+    height: 344px;
+    background-color: white;
+    margin: 0;
+    margin-left: auto;
+
+}
+
+.sideItem {
+    display: block;
+    position: relative;
+    font-size: 13px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.sideItem:hover {
+    background-color: #cccccc;
+    color: #e67417;
+}
+.sideItem:hover::after {
+    position: absolute;
+    content: "";
+    border: solid #e67417;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    right: 5px;
+    margin-top: 5px;
+}

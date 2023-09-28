@@ -1,0 +1,28 @@
+.container {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: stretch;
+        align-items: stretch;
+}
+.card{
+    display: flex;
+    margin: 5px;
+    border-radius: 50px;
+    padding: 5px 5px;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: all ease .3s;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 2px 2px 4px gray;
+}
+.icon {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid rgb(229, 229, 229);
+    background-color: rgb(229, 229, 229);
+}
