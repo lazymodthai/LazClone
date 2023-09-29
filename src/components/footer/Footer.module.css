@@ -1,8 +1,49 @@
-.container1{
+.container1 {
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.container2{
+
+.container2 {
     width: 1188px;
+}
+
+.firstContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    color: navy;
+    margin: 60px 0;
+}
+
+.firstList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.firstList li {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.firstList li:hover {
+    text-decoration: underline;
+}
+
+.appDownload {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.secondContainer1{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+}
+.secondContainer2{
+    display: grid;
+    grid-template-columns: 395px 395px 395px;
+    margin: 60px 0;
 }

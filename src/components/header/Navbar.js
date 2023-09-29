@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from "./Header.module.css";
+import "./sticky.css";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 
 import { v4 as uuidv4 } from "uuid";
@@ -35,8 +36,25 @@ function Navbar(props) {
       type: "normal",
     },
   ];
+
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector(".navBar");
+    const scrollTop = window.scrollY;
+    scrollTop >= 80
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
+  };
+
   return (
-    <div className={styles.navBar}>
+    <div className="navBar">
       <div className={styles.menuBar}>
         <div className={styles.container}>
           <ul className={styles.menuItem}>
