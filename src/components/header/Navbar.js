@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import { AiOutlineSearch,AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -41,9 +41,8 @@ function Navbar(props) {
         <div className={styles.container}>
           <ul className={styles.menuItem}>
             {menuItem.map((e) => (
-              <a href="/">
+              <a href="/" key={uuidv4()}>
                 <li
-                  key={uuidv4()}
                   className={e.type === "important" ? styles.imp : styles.nor}
                 >
                   {e.name}
@@ -74,8 +73,12 @@ function Navbar(props) {
               <AiOutlineSearch size={25} />
             </button>
           </form>
-          <AiOutlineShoppingCart size={35} className={styles.cartIcon}/>
-          <img className={styles.pro1} src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1DcZESBr0gK0jSZFnXXbRRXXa.jpg" alt="pro1" />
+          <AiOutlineShoppingCart size={35} className={styles.cartIcon} />
+          <img
+            className={styles.pro1}
+            src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1DcZESBr0gK0jSZFnXXbRRXXa.jpg"
+            alt="pro1"
+          />
         </div>
       </div>
     </div>

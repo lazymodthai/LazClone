@@ -1,8 +1,5 @@
 .productsContainer {
     width: 1188px;
-    height: 375px;
-    background-color: #fff;
-    ;
 }
 
 .title {
@@ -10,39 +7,34 @@
     padding: 15px 0 5px 0;
 }
 
-.header {
-    height: 60px;
-    border-bottom: 0.5px solid #bababa;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-.status {
-    margin: auto 20px;
-    color: #f57224;
-}
 .content{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .card{
     max-width: 188px;
     margin: 5px;
+    background-color: white;
     cursor: pointer;
 }
 .card:hover{
     box-shadow: 1px 1px 5px gray;
 }
 .cardImg img{
-    width: 188px;
+    width: 188.99px;
+    height: 188.99px;
 }
 .cardTextBlock{
+    margin-top: 20px;
     padding: 0 4px;
+    width: 188.9px;
+    height: 135.9px;
 }
 .cardName {
-    width: 188px;
+    width: 182px;
     font-size: 14px;
     overflow: hidden;
     display: -webkit-box;
@@ -50,6 +42,10 @@
     line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+}
+.payday{
+    height: 15.99px;
+    margin-right: 5px;
 }
 
 .cardPrice {
@@ -69,4 +65,19 @@
     display: inline;
     margin-left: 3px;
     font-size: 12px;
+}
+.starsContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.star{
+    color: #ffbb00;
+    display: inline;
+}
+.comment{
+    display: inline;
+    color: gray;
+    font-size: 14px;
 }

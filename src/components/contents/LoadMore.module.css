@@ -1,0 +1,15 @@
+.container{
+    margin-top: 30px;
+    border-bottom: 1px solid #b4b4b4;
+}
+.btnLoadmore{
+    display: block;
+    width: 387px;
+    height: 40px;
+    border: 1px solid #6fc2fa;
+    color: #6fc2fa;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+}

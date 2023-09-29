@@ -1,6 +1,6 @@
 .title {
     font-size: 24px;
-    padding: 15px 0;
+    padding: 15px 0 5px 0;
 }
 
 .titleContainer {
@@ -16,7 +16,6 @@
 
 .lazMallCardContainer {
     height: 270;
-    background-color: white;
     display: flex;
     justify-content: space-between;
 }
@@ -28,6 +27,7 @@
     position: relative;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -53,7 +53,7 @@
     bottom: 50px;
     width: 44px;
     height: 44px;
-    left: 40%;
+    left: 70px;
     top: 60%;
     outline: 4px solid white;
     box-shadow: 4px 5px 4px gray;
