@@ -1,5 +1,71 @@
-.producesContainer{
+.productsContainer {
     width: 1188px;
     height: 375px;
-    background-color: #fff;;
+    background-color: #fff;
+    ;
+}
+
+.title {
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+.header {
+    height: 60px;
+    border-bottom: 0.5px solid #bababa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.status {
+    margin: auto 20px;
+    color: #f57224;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    max-width: 188px;
+    margin: 5px;
+}
+.card:hover{
+    box-shadow: 1px 1px 5px gray;
+}
+.cardImg img{
+    width: 188px;
+}
+.cardTextBlock{
+    padding: 0 4px;
+}
+.cardName {
+    width: 188px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.cardPrice {
+    font-size: 18px;
+    color: #f57224;
+    font-weight: 600;
+}
+
+.cardOldPrice {
+    display: inline;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #bababa;
+}
+
+.cardSale {
+    display: inline;
+    margin-left: 3px;
+    font-size: 12px;
 }

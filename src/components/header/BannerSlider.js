@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./BannerSlider.module.css";
 import Carousel from "../carousel/Carousel";
+import { v4 as uuidv4 } from "uuid";
 
 function BannerSlider() {
   const firstMenu = [
@@ -24,7 +25,7 @@ function BannerSlider() {
         <div className={styles.container2}>
           <div className={styles.sideMenu}>
             {firstMenu.map((i) => (
-              <div className={styles.sideItem}>{i}</div>
+              <div className={styles.sideItem} key={uuidv4()}>{i}</div>
             ))}
           </div>
           <div className={styles.carousel}>

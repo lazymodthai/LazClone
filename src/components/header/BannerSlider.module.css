@@ -41,8 +41,14 @@
     display: block;
     position: relative;
     font-size: 13px;
-    padding: 5px 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     cursor: pointer;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .sideItem:hover {
     background-color: #cccccc;
@@ -51,7 +57,7 @@
 .sideItem:hover::after {
     position: absolute;
     content: "";
-    border: solid #e67417;
+    border: solid #f57224;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
